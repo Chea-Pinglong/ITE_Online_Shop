@@ -5,7 +5,6 @@ import com.google.gson.annotations.SerializedName;
 public class Products {
 
     private int id;
-    private int sku;
     private String name;
     private String description;
     private int price;
@@ -20,14 +19,6 @@ public class Products {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getSku() {
-        return sku;
-    }
-
-    public void setSku(int sku) {
-        this.sku = sku;
     }
 
     public String getName() {
@@ -54,6 +45,7 @@ public class Products {
         this.price = price;
     }
 
+    @SerializedName("image-url")
     public String getImageurl() {
         return imageurl;
     }

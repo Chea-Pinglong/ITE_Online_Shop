@@ -1,9 +1,9 @@
 package kh.edu.rupp.ite.onlineshop.api.model;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Profile {
-
     private String first_name;
     private String last_name;
     private String email;

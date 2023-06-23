@@ -38,7 +38,10 @@ public class LandingActivity extends AppCompatActivity {
                 showFragment(new MoreFragment());
             } else if (item.getItemId() == R.id.mnuProduct) {
                 showFragment(new ProductsFragment());
-            } else if (item.getItemId() == R.id.mnuProfile) {
+            }
+            else if (item.getItemId() == R.id.mnuProfile) {
+                showFragment(new ProfileFragment());
+            }else if (item.getItemId() == R.id.mnuProfile){
                 showFragment(new ProfileFragment());
             }
 
@@ -102,6 +105,7 @@ public class LandingActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
 
         ProfileFragment profileFragment = new ProfileFragment();
 
